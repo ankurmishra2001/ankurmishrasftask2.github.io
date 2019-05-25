@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+body{ margin:0;}
+a{ text-decoration:none;
+    color:inherit;}
+@font-face{
+            font-family:BrandonText-Regular;
+			src: url("BrandonText-Regular.otf");
+		}
+@font-face{
+            font-family:BrandonText-Medium;
+			src: url("BrandonText-Medium.otf");
+		}
+@font-face{
+            font-family:BrandonText-Bold;
+			src: url("BrandonText-Bold.otf");
+		}
+@font-face{
+            font-family:HelveticaNeue-Light;
+			src: url("HelveticaNeue-Light.ttf");
+		}
+@font-face{
+            font-family:Arial;
+			src: url("Arial.ttf");
+         }
+		 
+.logo1{
+       height=19px;
+	   width=155px;
+	   margin-left:16.9%;
+	   margin-top:3.95%;
+	  }
+.logo2{
+       
+       height=30px;
+	   width=312px;
+	   margin-left:16.9%;
+	   margin-top:1.1%;
+	  }
+.bookmark{
+          
+           height=77px;
+	       width=244px;
+	       margin-left:65.95%;
+	       margin-top:-244px;
+         } 
+#firstbg{
+          background-color:#D83230;
+		  background-size:100% 300px;
+         }
+		 
+.welcome{
+          margin-top:-.25%;
+          margin-left:16.9%;
+		  font-size:20px;
+		  color:white;
+		  padding-top:8px;
+		  font-family:BrandonText-Regular;
+
+		}
+.sign{
+       color:white;
+	   font-size:36px;
+	   margin-left:16.9%;
+	   font-family:BrandonText-Medium;
+	   margin-top:-.45%;
+	 }
+	 
+input[type=text] {
+  height:36px;
+  width:280px;
+  padding: 0px 11px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+div.box1 {
+  background-color: #AD2826;
+  padding: 10px 15px 20px;
+  margin-top: 2.5px;
+  margin-left:16.9%;
+  width:279.5px;
+  height:208px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  font-weight:400;
+  float:left;
+  color:white;
+  font-family:Arial;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 6.5px;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border:1px solid #0094b3;
+  border-color:#b4b4b4;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #AD2826;
+  border:none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 7.5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+p{
+   margin-top:-3px;
+  }
+
+input[type=submit] {
+                      width: 100%;
+					  height:45px;
+                      background-color: #F28005;
+					  font-size:18px;
+					  font-family:BrandonText-Bold;
+                      color: white;
+                      padding: 10px 20px;
+                      margin: 8px 0px;
+                      border: none;
+                      cursor: pointer;
+					  transition: .8s;
+               }
+input[type=submit]:hover {
+  background-color: #ee4d28;
+}
+
+.forgot{
+         font-family:Arial;
+		 font-size:12px;
+		 color:white;
+	}
+
+
+
+
+
+
+
+
+
+
+	
+div.fth{
+    margin-top: -16.55%;
+	padding-left:5.8%;
+	margin-left:32.35%;
+	width:44%;
+	z-index:2;
+}
+
+.firstth{
+            border-bottom:1px solid white;
+            
+            line-height:1%;
+			z-index:1;
+	
+		}
+h2{
+     font:36px BrandonText-Medium;
+	 color:white;
+	 text-align:center;
+	 
+	 
+	}
+span.sfth{
+            background-color:#D83230;
+			padding:6px;
+		}
+			
+
+
+div.box2 {
+  background-color: #AD2826;
+  margin-top: 2.5%;
+  margin-left:38.25%;
+  width:325px;
+  height:187px;
+}
+.teachers{
+           font-family:BrandonText-Medium;
+		   font-size:24px;
+		   padding:43px 103px;
+		   color:white;
+		 }
+.box2 input[type=submit] {
+                      width: 84.3%;
+					  height:45px;
+                      background-color: #3FB0EB;
+					  font-size:18px;
+					  font-weight:700;
+					  font-family:Arial;
+                      color: white;
+                      padding: 10px 20px;
+                      margin: -80px 25px;
+                      border: none;
+                      cursor: pointer;
+					  transition:0s;
+               }
+.box2 input[type=submit]:hover {
+  background-color: #0098c8;
+}
+div.box3 {
+  background-color: #AD2826;
+  margin-top: -12.3%;
+  margin-left:60.65%;
+  width:325px;
+  height:187px;
+}
+.parents{
+           font-family:BrandonText-Medium;
+		   font-size:24px;
+		   padding:43px 115px;
+		   color:white;
+		 }
+.box3 input[type=submit] {
+                      width: 84.3%;
+					  height:45px;
+                      background-color: #F28005;
+					  font-size:18px;
+					  font-weight:700;
+					  font-family:Arial;
+                      color: white;
+                      padding: 10px 20px;
+                      margin: -80px 33px;
+                      border: none;
+                      cursor: pointer;
+					  transition:0s;
+               }
+.box3 input[type=submit]:hover {
+  background-color: #ee4d28;
+}
+ 
+div.box4{
+       width:100%;
+       height:20px;
+	   background-color:#AD2826;
+	   margin-top:17px;
+    }   
+	
+#background2 {
+               background-image:url("background2.jpg");
+			   background-repeat:none;
+			   background-size:cover;
+			   height:430px;
+			   width:100%;
+			   margin-top:3.5px;
+			 }
+.text2{
+          font: 40px BrandonText-Regular;
+          margin: 0px 0px 15px;
+		  padding: 17px 0px 0px 0px;
+          text-align:center;
+		  font-weight:400;
+		  color:white;
+      }		  
+.vidimg{
+          
+          margin-top:-5px;
+          margin-left:16.9%;		  
+		}
+.books {
+          margin-top:-21.05%;
+          margin-left:57%;
+       }		  
+
+.heading1{
+           color:#D83230;
+           font-size:36px;
+		   font-family:BrandonText-Regular;
+           text-align:center;
+           margin-top:40px;
+        }	
+#background3{
+               width:100%;
+               background-color:white;
+               height:350px;			 			   
+	         }	
+
+.img1{
+         margin-left:16.9%;
+		 margin-top:1.7%;
+     }
+.img2{
+         margin-left:1.6%;
+		 
+     }
+.img3{ margin-left:1.6%;}
+.img4{ margin-left:1.6%;}
+
+
+
+
+
+
+.img1num{
+	margin-left:16.9%;
+	margin-top:-0.8%;
+	width:15%;
+}
+.himg1num::before{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   right:9px;
+				  }
+.himg1num::after{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   left:9px;
+				  }
+.himg1num{
+    color:#D73131;
+	font:20px Arial;
+	text-align:center;
+	font-weight:bold;
+}
+
+.img2num{
+	margin-left:33.9%;
+	margin-top:-2.7%;
+	width:15%;
+}
+.himg2num::before{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   right:9px;
+				  }
+.himg2num::after{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   left:9px;
+				  }
+.himg2num{
+    color:#D73131;
+	font:20px Arial;
+	text-align:center;
+	font-weight:bold;
+}
+
+.img3num{
+	margin-left:50.9%;
+	margin-top:-2.6%;
+	width:15%;
+}
+.himg3num::before{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   right:9px;
+				  }
+.himg3num::after{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   left:9px;
+				  }
+.himg3num{
+    color:#D73131;
+	font:20px Arial;
+	text-align:center;
+	font-weight:bold;
+}
+
+.img4num{
+	margin-left:67.9%;
+	margin-top:-2.7%;
+	width:15%;
+}
+.himg4num::before{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   right:9px;
+				  }
+.himg4num::after{
+                   content:"_________";
+				   position:relative;
+				   color:#dbcba6;
+				   font-weight:100;
+				   top:-8px;
+				   left:9px;
+				  }
+.himg4num{
+    color:#D73131;
+	font:20px Arial;
+	text-align:center;
+	font-weight:bold;
+}
+
+.img1text{
+           color:#3a3a3a;
+		   font:18px Arial;
+		   margin-left:18.9%;
+		   text-align:center;
+		   width:12%;
+		   display:inline-table;
+		 }
+.img2text{
+           
+           color:#3a3a3a;
+		   font:18px Arial;
+		  margin-left:34%;
+		  margin-top:-5.4%;
+		   text-align:center;
+		   width:14%;
+		 }    
+.img3text{
+           
+           color:#3a3a3a;
+		   font:18px Arial;
+		  margin-left:51%;
+		  margin-top:-4.2%;
+		   text-align:center;
+		   width:14%;
+		 } 
+.img4text{
+           
+           color:#3a3a3a;
+		   font:18px Arial;
+		  margin-left:68%;
+		  margin-top:-5.4%;
+		   text-align:center;
+		   width:14%;
+		 } 
+		 
+#background4{
+              width:100%;
+			  height:480px;
+			  background:#f4f1ea;
+			}
+.heading2{
+            color:#D83230;
+			font:36px BrandonText-Regular;
+			text-align:center;
+			padding-top:1%;
+	    }
+
+.manvideo{
+            margin-left:16.9%;
+			margin-top:1%;
+		}
+.videosbox{
+             box-sizing:border-box;
+			 background-color:white;
+			 width:22%;
+			 height:79.8%;
+			 padding-top:1%;
+			 padding-right:1%;
+			 padding-bottom:1%;
+			 padding-left:1%;
+			 margin-left:60.9%;
+			 margin-top:-25.45%
+			
+			 
+		}
+.vidbox{
+         
+          border:1px solid #d2d2d2;
+		  width:100%;
+		  height:100%;
+		  overflow:scroll;
+		}
+		
+#background5{
+               width:100%;
+			   height:215px;
+			 }
+
+.heading3{
+            text-align:center;
+			font:36px BrandonText-Regular;
+			color:#D83230;
+			margin-top:2.5%;
+	      }
+		  
+.h3flexbox{
+          margin-top:1.4%;
+		  margin-left:16.9%;
+		  display:flex;
+		}
+.h3flexbox > div{
+                   background-color: white;
+                   border-left:1px solid #D83230;
+                   border-right:1px solid #D83230;
+                   text-align:center;
+                   margin-right: 0px;
+                   padding:5px;
+                   height: 10%;
+                   width:19%;
+				   font:20px BrandonText-Regular;
+}
+
+#background6{
+              width:100%;
+			  height:225px;
+			  background:#f4f1ea;
+			}   
+
+.heading4  {
+             text-align:center;
+			 font:36px BrandonText-Regular;
+			 color:#D83230;
+			 padding-top:1.5%;
+		}
+.h4flexbox{
+          margin-top:1.4%;
+		  margin-left:16.9%;
+		  display:flex;
+		}
+.h4flexbox > div{
+                   background-color: #f4f1ea;
+                   
+                   text-align:center;
+                   margin-right: 1.5%;
+                   padding:0px;
+                   height: 50%;
+                   width:38.9%;
+				   
+}
+.teacherh{
+            font:32px BrandonText-Medium;
+			color:#3FB0EB;
+		}
+.teacherlink{
+              font:18px Arial;
+			  font-weight:700;
+			  color:white;
+			  background-color:#3FB0EB;
+			  margin-top:2%;
+			  padding:2.5%;
+			}
+
+.parenth{
+            font:32px BrandonText-Medium;
+			color:#F88000;
+		}
+.parentlink{
+              font:18px Arial;
+			  font-weight:700;
+			  color:white;
+			  background-color:#F28005;
+			  margin-top:2%;
+			  padding:2.5%;
+			}
+
+#background7{
+              width:100%;
+			  height:340px;
+			  background:white;
+			}  	
+
+.finalfbox{
+          margin-top:6%;
+		  display:flex;
+		}
+.finalfbox > div.wfbox1{
+                   background-color: #f4f1ea;
+                   margin-right:0.24%;
+                   height: 180px;
+                   width:16.8%;
+			}	
+.finalfbox > div.wfbox2{
+                   background-color: #f4f1ea;
+                   height: 180px;
+                   width:16.8%;
+			}	
+.finalfbox > div.nfbox{
+                   background-color:#f4f1ea;               
+                   margin-right:0.24%;
+                   height: 180px;
+                   width:16.3%;
+			}	
+.nboxtext{
+            font:14px Arial;
+             padding-top:6%;
+             padding-left:8%;
+          			 
+          }	
+.nboxtexthover{
+                 color:#3a3a3a;
+               }				 
+
+.nboxtexthover:hover{
+                       color:#F88000;
+					 }
+     		  
+.smallfbox{
+             display:flex;
+			 margin-left:17%;
+			 margin-top:1%;
+		  }
+.smallfbox > div.nsmallfbox{
+                              border-right:1px solid black;
+							  text-align:center;
+							  padding-left:1%;
+							  padding-right:1%;
+							  font:12px Arial;
+							  color:#3a3a3a;
+							}
+.smallfbox > div.fsmallfbox{
+                              border-right:1px solid black;
+							  text-align:center;
+							  padding-right:1%;
+							  font:12px Arial;
+							}
+.smallfbox > div.lsmallfbox{
+                             text-align:center;
+							 padding-left:1%;
+							  padding-right:1%;
+							  font:12px Arial;
+							  color:#3a3a3a;
+						}
+.sfbhover{
+            color:#3a3a3a;
+		}
+.sfbhover:hover{
+                  color:#F88000;
+				}
+ul.lastline{ margin-left:14.4%;
+             margin-top:0;
+           }				
+ul.lastline>li{
+              display:inline;
+			   font:12px Arial;
+			}
+.lastline li:before {
+	content: '\00a0\2022\00a0\00a0';
+	color:#999;
+	color:black;
+	font-size:11px;
+	font-weight:900;
+}
+.lastline li:first-child:before {
+	content: '';
+} 
+.privacy{
+           color:#3a3a3a;
+		 }
+.privacy:hover{
+                 color:#F88000;
+		      }
+.tou{
+       color:#3a3a3a;
+	 }
+.tou:hover{
+            color:#F88000;
+		}
+
+.feedback{		
+    cursor: pointer;
+    position: fixed;
+    width: max-content;
+    top: 50%;
+    right: -2.30384413vw;
+    transform: translateY(-50%) rotateZ(-90deg);
+    background: #111;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 0.789889vw;
+    border: 0.13326vh solid #fff;
+    border-radius: 0.6663113vh;
+}
+.feedback:hover{
+                  padding:1em;
+				}
+</style>
+</head>
+<title>SF TASK-2
+</title>
+<body>
+<div><img class= "logo1" src="logo1.png" ></img></div>
+<div><img class= "logo2" src="logo2.png" ></img></div>
+<div><img class="bookmark" src="bookmark.png"></img></div>
+<div id="firstbg">
+<div class="welcome">Welcome Back!</div>
+<div class="sign">SIGN IN</div>
+
+  <div class="box1">
+           <form>
+              <input type="text" id="sch_email"  placeholder="Scholastic Account Email">
+			  <input type="text" id="sch_pass"  placeholder="Scholastic Account Password">
+		   </form>  
+		   <label class="container"><text style="font-size:12px">Remember me.</text><p style="font-size:10px">(Not recommended for public computers.)</p>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+           </label>
+		   <input type="submit" value="SIGN IN">
+		   <a href="#" class="forgot"><u>Forgot your account information?</u></a>
+  </div>
+
+<div class="fth"><h2 class="firstth"><span class="sfth">FIRST TIME HERE?</span></h2></div>
+<div class="box2">
+        <div class="teachers">TEACHERS</div>
+		<input type="submit" value="CREATE AN ACCOUNT >">
+</div>
+<div class="box3">
+        <div class="parents">PARENTS</div>
+		<input type="submit" value="GET STARTED >">
+</div>
+<div class="box4"></div>
+</div>     
+<div id="background2">
+    <div class="text2">When Children Love to read, the Future Is an Open Book</div>
+	<div><a href="#"><img class="vidimg" src="video.png" height="320px" width="580px"></img></a></div>
+	<div><img class="books" src="books.png"  height="340px" width="410px"></img></div>
+</div>
+
+     <div class="heading1">How to Grow the Love of Reading</div>
+
+<div id="background3" style="display:inline-block">
+     <div>
+	 <img class="img1" src="img1.jpeg" height="145px" width="225px"></img>
+	 <img class="img2" src="img2.jpeg" height="145px" width="225px"></img>
+	 <img class="img3" src="img3.jpeg" height="145px" width="225px"></img>
+	 <img class="img4" src="img4.jpeg" height="145px" width="225px"></img>
+	 </div>
+	 <div class="img1num">
+	 <h2 class="himg1num"><span class="simg1num">1</span></h2>
+	 </div>
+	 <div class="img2num">
+	 <h2 class="himg2num"><span class="simg2num">2</span></h2>
+	 </div>
+	 <div class="img3num">
+	 <h2 class="himg3num"><span class="simg3num">3</span></h2>
+	 </div>
+	 <div class="img4num">
+	 <h2 class="himg4num"><span class="simg4num">4</span></h2>
+	 </div>
+	 <div class="imgtext">
+	 <div class="img1text">Teachers send home book flyers with many more books available online.</div>
+	 <div class="img2text">Kids choose books,<br> and parents submit orders<br> to teacher.</div>
+	 <div class="img3text">Teachers submit class orders to Scholastic & <br>get <b>FREE</b> Books &<br> resources for the class.</div>
+     <div class="img4text">The Book Box arrives<br> in class, and teacher<br> distributes student book<br> orders.</div>
+	 </div>
+</div>	
+<div id="background4">
+    <div class="heading2">How to Get Started</div>
+	<div class="manvideo"><a href="#"><img src="videobox.jpg" height="28%" width="53%"></img></a></div>
+	<div class="videosbox">
+	   <div class="vidbox">
+	   <a href="#"><img src="video1.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video2.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video3.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video4.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video5.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video6.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video7.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video8.png" height="25%" width="95%"></img></a>
+	   <a href="#"><img src="video9.png" height="25%" width="100%"></img></a>
+	   </div>
+	</div>
+</div>
+<div id="background5">
+    <div class="heading3">Exclusively for Teachers</div>
+	<div class="h3flexbox">
+	      <div><a href="#">Shop</a><br> <a href="#">Exclusive</a><br> <a href="#">Teacher values</a> <b><a href="#">></a></b></div>
+		  <div><a href="#">Introduce a New</a><br> <a href="#">Teacher—Get 250</a><br> <a href="#">Bonus Points</a> <b><a href="#">></a></b></div>
+		  <div><a href="#">Sign In to</a><br> <a href="#">Redeem Your</a><br> <a href="#">Bonus Points</a> <b><a href="#">></a></b></div>
+		  <div><a href="#">New Apple</a><br> <a href="#">Recognition and</a><br> <a href="#">Rewards Program</a> <b><a href="#">></a></b></div>
+	</div>
+</div>
+<div id="background6">
+<div class="heading4">Let's Get Reading</div>
+<div class="h4flexbox">
+       <div>
+	        <div class="teacherh">TEACHERS</div>
+            <a href="#"><div class="teacherlink">CREATE AN ACCOUNT ></div></a>			
+	   </div>
+	   <div>
+	        <div class="parenth">PARENTS</div>
+            <a href="#"><div class="parentlink">CREATE AN ACCOUNT ></div></a>	
+	   </div>
+</div>
+</div>
+<div id="background7">
+<div class="finalfbox">
+        <div class="wfbox1"></div>
+        <div class="nfbox">
+		       <div class="nboxtext">
+			        <div style="font-weight:900">FOR TEACHERS</div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1.2;"><br><a href="#">Create an Account</a></div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1;"><br><a href="#">Request a Catalog</a></div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1;"><br><a href="#">FAQs</a></div>
+			   </div>
+		</div>
+        <div class="nfbox">
+		       <div class="nboxtext">
+			        <div style="font-weight:900">FOR PARENTS</div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1.2;"><br><a href="#">Connect to Your Teacher</a></div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1;"><br><a href="#">FAQs</a></div>
+					<div style="font-weight:900;line-height:1.2;"><br>CONTESTS AND PROGRAMS</div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1.2;"><br><a href="#">All contests</a></div>
+			   </div>
+		</div>
+        <div class="nfbox">
+		       <div class="nboxtext">
+			        <div style="font-weight:900">CONTACT US</div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1.2;"><br><a href="#">bookclubs@scholastic.com</a></div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1;"><br><a href="#">1-800-724-6527</a></div>
+			   </div>
+		</div>
+        <div class="nfbox">
+		       <div class="nboxtext">
+			        <div style="font-weight:900">FOLLOW US</div>
+					<div class="nboxtexthover" style="font-weight:100;line-height:1.2;"><br><a href="#">Judy Newman at Scholastic</a></div>
+               </div>
+		</div>
+		<div class="wfbox2"></div>
+        
+</div>
+<div class="smallfbox">
+      <div class="fsmallfbox"><text class="sfbhover"><a href="#">Scholastic.com</a></text></div>
+      <div class="nsmallfbox"><text class="sfbhover"><a href="#">About Scholastic</a></text></div>
+      <div class="nsmallfbox"><text class="sfbhover"><a href="#">Site Map</a></text></div>
+      <div class="nsmallfbox"><text class="sfbhover"><a href="#">Careers</a></text></div>
+      <div class="nsmallfbox"><text class="sfbhover"><a href="#">Investor Relations</a></text></div>
+	  <div class="lsmallfbox"><text class="sfbhover"><a href="#">International</a></text></div>
+</div>
+<ul class="lastline">
+      <li class="privacy"><b><a href="#">PRIVACY POLICY</a></b></li>
+	  <li class="tou"><a href="#">TERMS OF USE</a></li>
+	  <li class="lit3">TM &#174 & &#169 2019 Scholastic Inc. All Rights Reserved</li>
+</ul>
+</div>
+<div class="feedback">[+] Feedback </div>
+</body>
+</html>
